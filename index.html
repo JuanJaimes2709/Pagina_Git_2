@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera pagina</title>
+  <title>Imagen aleatoria</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <center>
-    <h1>Imagen aleatoria de picsum</h1>
-    <img src="https://picsum.photos/600/600" alt="Imagen aleatoria">
+  <div class="card">
+    <h1>Imagen aleatoria de Picsum</h1>
+    <img id="randomImage" src="https://picsum.photos/600/600?random=1" alt="Imagen aleatoria">
     <br>
-    <h1></h1>
-  </center>
+    <button class="btn" onclick="cambiarImagen()">Generar nueva imagen</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
